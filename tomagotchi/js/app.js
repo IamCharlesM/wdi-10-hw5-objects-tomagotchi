@@ -9,14 +9,16 @@ let tomagotchi = {
     foodInTummy: 10,
     restedness: 10,
     health: 10,
-    cry: function() {
-    console.log("WAAAAAA!!!")
-},
-    puke: function() {
-        console.log("Bleeeh :0~~")
+    cry: function () {
+        this.foodInTummy--
+            console.log("WAAAAAA!!!" + this.name + " is getting hungery and only has " + this.foodInTummy + " food left")
+
     },
-    yawn: function() {
-        console.log("Yaaaawwwnnn")
+    puke: function () {
+        console.log(this.name + " doesn't feel well: Bleeeh :0~~")
     },
-    
+    yawn: function () {
+        console.log(this.name + " goes 'Yaaaawwwnnn'")
+    },
+
 }
