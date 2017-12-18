@@ -36,7 +36,7 @@ myInformation.timeWarp()
 console.log(myInformation.age)
 console.log(myInformation.name)
 <!--                 Greater -->
-*/
+
 
 let greeter = {
     hello: function(name) {
@@ -47,5 +47,23 @@ let greeter = {
     },
     whoAreYou: function(name) {
         console.log("Yo name was " + name + "right?")
+    }
+}
+<!--                     Strings -->
+*/
+
+
+let stringCollector = {
+	collection: [],
+	collect: function (str) {
+		let cut = str.split(" ");
+		let reverse = cut.reverse();
+		this.collection.push(reverse);
+		console.log(this.collection);
+	},
+    admireCollection: function() {
+        for (i = 0; i < this.collection.length; i++) {
+            console.log(this.collection[i])
+        }
     }
 }
