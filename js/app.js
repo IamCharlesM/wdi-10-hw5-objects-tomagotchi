@@ -71,7 +71,7 @@ let stringCollector = {
 }
 
 <!--                 ATM -->
-*/
+
 
 let atm = {
 	totalCash: 200000,
@@ -81,6 +81,25 @@ let atm = {
 			console.log(20 * num);
 		} else if (this.totalCash <= 0) {
 			return null;
+		}
+	}
+}
+<!--                 Hungry Turtles -->
+*/
+
+
+let leonardo = {
+	name: "Donatello",
+	color: "Purple",
+	weapon: "BowStaff",
+	pizzaEaten: false,
+	eatPizza: function () {
+		if (this.pizzaEaten === false) {
+			console.log("Donatello is eating pizza.");
+			this.pizzaEaten = true;
+		} else if (this.pizzaEaten === true) {
+			console.log("Donatello has already eaten pizza.");
+			this.pizzaEaten = false;
 		}
 	}
 }
