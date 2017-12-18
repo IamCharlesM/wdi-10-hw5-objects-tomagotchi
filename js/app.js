@@ -22,14 +22,16 @@ let myInformation = {
     let aged = myInformation.age + 10;
     console.log("Greetings random person, my government name is " + myInformation.name + " but they call me Petty Rosevelt out here in these screets, you feel me? " +myInformation.tidbit + " and in ten years I'll be " + aged + ".")
 },
+    // I want to get older
     timeWarp: function() {
         myInformation.age ++
     },
+    // I want to change my name
     fbi: function(protection) {
     myInformation.name = protection;
 }
 }
-myInformation.fbi("Kittens")
+myInformation.fbi("Rumpelstiltskin")
 myInformation.timeWarp()
 console.log(myInformation.age)
 console.log(myInformation.name)
