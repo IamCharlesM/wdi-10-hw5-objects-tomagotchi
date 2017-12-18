@@ -51,7 +51,7 @@ let greeter = {
     }
 }
 <!--                     Strings -->
-*/
+
 
 
 let stringCollector = {
@@ -68,4 +68,19 @@ let stringCollector = {
             console.log(this.collection[i])
         }
     }
+}
+
+<!--                 ATM -->
+*/
+
+let atm = {
+	totalCash: 200000,
+	dispenseTwenties: function(num) {
+		this.totalCash = this.totalCash - (20 * num)
+		if (this.totalCash >= 0) {
+			console.log(20 * num);
+		} else if (this.totalCash <= 0) {
+			return null;
+		}
+	}
 }
