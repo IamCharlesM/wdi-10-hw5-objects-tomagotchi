@@ -14,5 +14,9 @@ let tomagotchi = {
 },
     puke: function() {
         console.log("Bleeeh :0~~")
-    }
+    },
+    yawn: function() {
+        console.log("Yaaaawwwnnn")
+    },
+    
 }
