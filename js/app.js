@@ -39,12 +39,13 @@ console.log(myInformation.name)
 
 
 let greeter = {
+// say hello
     hello: function(name) {
         console.log("What's good " + name + "?")
-    },
+    },//say goodbye
     goodbye: function(name) {
         console.log("Peace out " + name + ".")
-    },
+    },//remember who you are
     whoAreYou: function(name) {
         console.log("Yo name was " + name + "right?")
     }
@@ -55,12 +56,13 @@ let greeter = {
 
 let stringCollector = {
 	collection: [],
+    //put words into array
 	collect: function (str) {
 		let cut = str.split(" ");
 		let reverse = cut.reverse();
 		this.collection.push(reverse);
 		console.log(this.collection);
-	},
+	},//call words from aray
     admireCollection: function() {
         for (i = 0; i < this.collection.length; i++) {
             console.log(this.collection[i])
