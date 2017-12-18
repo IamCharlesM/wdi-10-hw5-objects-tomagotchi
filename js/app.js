@@ -85,7 +85,7 @@ let atm = {
 	}
 }
 <!--                 Hungry Turtles -->
-*/
+
 
 
 let leonardo = {
@@ -101,5 +101,20 @@ let leonardo = {
 			console.log("Donatello has already eaten pizza.");
 			this.pizzaEaten = false;
 		}
+	}
+}
+<!--                 Calculator -->
+
+*/
+
+let calculator = {
+	output: 0,
+	multiply: function (a,b) {
+		this.output = a * b; 
+		console.log(this.output);
+	},
+	divide: function (x,y) {
+		this.output = x/y;
+		console.log(this.output);
 	}
 }
