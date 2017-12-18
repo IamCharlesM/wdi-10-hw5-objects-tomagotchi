@@ -11,8 +11,8 @@ let clicker = {
     }
     
 }
+<!--                 Name -->
 
-*/
 
 let myInformation = {
     name: "Charles McGregory",
@@ -35,3 +35,17 @@ myInformation.fbi("Rumpelstiltskin")
 myInformation.timeWarp()
 console.log(myInformation.age)
 console.log(myInformation.name)
+<!--                 Greater -->
+*/
+
+let greeter = {
+    hello: function(name) {
+        console.log("What's good " + name + "?")
+    },
+    goodbye: function(name) {
+        console.log("Peace out " + name + ".")
+    },
+    whoAreYou: function(name) {
+        console.log("Yo name was " + name + "right?")
+    }
+}
